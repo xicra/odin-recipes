@@ -1,0 +1,54 @@
+p,
+li,
+h2,
+h3 {
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title,
+.menu {
+  text-align: center;
+}
+/* It's pissing me off the title isn't center-aligned with the images,
+but I'll leave it like this for now */
+
+
+.menu img {
+  max-width: 20%;
+  height: auto;
+}
+
+.menu li {
+  font-family: 'Courier New', Courier, monospace;
+  list-style-type: none;
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: darkgray 2in;
+  font-weight: bolder;
+}
+
+.title {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+img {
+  border: 1px solid;
+  border-radius: 16px;
+  object-fit: contain;
+  max-width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
