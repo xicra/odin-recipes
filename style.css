@@ -8,21 +8,28 @@ h3 {
 
 .title,
 .menu {
-  text-align: center;
-}
-/* It's pissing me off the title isn't center-aligned with the images,
-but I'll leave it like this for now */
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Makes it mobile responsible */
 
+}
 
 .menu img {
-  max-width: 20%;
-  height: auto;
+  max-width: 400px;
+  max-height: 200px ;
+  object-fit: cover;
+  filter: brightness(50%);
 }
 
 .menu li {
   font-family: 'Courier New', Courier, monospace;
   list-style-type: none;
   font-size: 36px;
+  color: violet;
+  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -31,24 +38,22 @@ but I'll leave it like this for now */
   font-weight: bolder;
 }
 
-.title {
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.container {
+.menu div {
   position: relative;
-  text-align: center;
-  color: white;
 }
 
 img {
   border: 1px solid;
   border-radius: 16px;
-  object-fit: contain;
-  max-width: 80%;
+  object-fit: cover;
+  max-width: 60%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+ul {
+/*   Fixed title not being aligned with menu with this */
+  padding-inline-start: 0;
 }
